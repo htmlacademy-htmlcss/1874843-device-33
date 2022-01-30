@@ -6,10 +6,10 @@
   </head>
   <body>
 
-    <header class="header">
+    <header class="page-header">
 
-      <h1 class="visually-hidden">Магазин современных гаджетов Device</h1>
-      <img class="logo" src="https://via.placeholder.com/150" alt="Логотип магазина Device">
+      <h1 class="page-header-title visually-hidden">Магазин современных гаджетов Device</h1>
+      <img class="logo" src="images/header_logo.svg" alt="Логотип магазина Device.">
 
       <form class="search" action="https://echo.htmlacademy.ru/" method="get">
         <input class="search-field" type="text" name="search-field" placeholder="Текст поиска">
@@ -21,11 +21,11 @@
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-link-enter" href="#">Войти</a>
           </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link user-navigation-link-name visually-hidden" href="#">Коля Петухов</a>
+          <li class="user-navigation-item visually-hidden">
+            <a class="user-navigation-link user-navigation-link-name" href="#">Коля Петухов</a>
           </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link user-navigation-link-exit visually-hidden" href="#">Выйти</a>
+          <li class="user-navigation-item visually-hidden">
+            <a class="user-navigation-link user-navigation-link-exit" href="#">Выйти</a>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-link-compare" href="#">Сравнить</a>
@@ -39,7 +39,7 @@
       <nav class="main-navigation">
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Каталог товаров</a>
+            <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-navigation-item">
             <a class="main-navigation-link" href="#">Доставка</a>
@@ -63,7 +63,7 @@
         <div class="promo">
           <p class="promo-number">01</p>
 
-          <img class="promo-image" src="https://via.placeholder.com/150" alt="Дрон">
+          <img class="promo-image" src="images/slider-dron.png" width="560" height="560" alt="Дрон.">
 
           <h3 class="gallery-title">Порхает как бабочка,<br>жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -74,7 +74,7 @@
         <div class="promo visually-hidden">
           <p class="promo-number">02</p>
 
-          <img class="promo-image" src="https://via.placeholder.com/150" alt="Фитнес-браслет">
+          <img class="promo-image" src="images/slider-fitness.png" width="560" height="560" alt="Фитнес-браслет.">
 
           <h3 class="gallery-title">Худеем<br>правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -84,7 +84,7 @@
         <div class="promo visually-hidden">
           <p class="promo-number">03</p>
 
-          <img class="promo-image" src="https://via.placeholder.com/150" alt="Селфи-палка">
+          <img class="promo-image" src="images/slider-selfie.png" width="560" height="560" alt="Селфи-палка.">
 
           <h3 class="gallery-title">Делай селфи,<br>как Бен Стиллер! </h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
@@ -94,10 +94,10 @@
         </div>
 
         <button class="promo-button promo-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
+          <img class="promo-button-prev" src="images/left_arrow.svg" width="20" height="60" alt="Стрелка влево.">
         </button>
         <button class="promo-button promo-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
+          <img class="promo-button-next" src="images/right_arrow.svg" width="20" height="60" alt="Стрелка вправо.">
         </button>
 
         <ol class="promo-pagination">
@@ -130,37 +130,37 @@
         <ul class="product-range-list">
           <li class="product-range-item">
             <button class="product-range-button">
-              <img class="product-range-image" src="https://via.placeholder.com/150" alt="Очки виртуальной реальности">
+              <img class="product-range-image" src="images/virtual.svg" width="97" height="55" alt="Очки виртуальной реальности.">
               <span class="product-range-span">Виртуальная реальность</span>
             </button>
           </li>
           <li class="product-range-item">
             <button class="product-range-button">
-              <img class="product-range-image" src="https://via.placeholder.com/150" alt="Телефон на палке">
+              <img class="product-range-image" src="images/monopod.svg" width="86" height="117" alt="Телефон на палке.">
               <span class="product-range-span">Моноподы для селфи</span>
             </button>
           </li>
           <li class="product-range-item">
             <button class="product-range-button">
-              <img class="product-range-image" src="https://via.placeholder.com/150" alt="Видеокамера">
+              <img class="product-range-image" src="images/action_camera.svg" width="71" height="87" alt="Видеокамера.">
               <span class="product-range-span">Экшн-камеры</span>
             </button>
           </li>
           <li class="product-range-item">
             <button class="product-range-button">
-              <img class="product-range-image" src="https://via.placeholder.com/150" alt="Браслет">
+              <img class="product-range-image" src="images/fitness.svg" width="107" height="65" alt="Браслет.">
               <span class="product-range-span">Фитнес-браслеты</span>
             </button>
           </li>
           <li class="product-range-item">
             <button class="product-range-button">
-              <img class="product-range-image" src="https://via.placeholder.com/150" alt="Часы">
+              <img class="product-range-image" src="images/smart_clock.svg" width="56" height="98" alt="Часы.">
               <span class="product-range-span">Умные часы</span>
             </button>
           </li>
           <li class="product-range-item">
             <button class="product-range-button">
-              <img class="product-range-image" src="https://via.placeholder.com/150" alt="Дрон">
+              <img class="product-range-image" src="images/dron.svg" width="132" height="69" alt="Дрон.">
               <span class="product-range-span">Квадрокоптеры</span>
             </button>
           </li>
@@ -185,14 +185,20 @@
           </ul>
         </nav>
 
-        <h3 class="info-title">Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <div class="delivery">
+          <h3 class="info-title">Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
 
-        <h3 class="info-title visually-hidden">Гарантия</h3>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        <div class="guarantee visually-hidden">
+          <h3 class="info-title">Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </div>
 
-        <h3 class="info-title visually-hidden">Кредит</h3>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+        <div class="credit visually-hidden">
+          <h3 class="info-title">Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+        </div>
 
         <p class="info-delivery">Доставим редкий товар под заказ</p>
       </section>
@@ -241,7 +247,7 @@
 
     <footer class="footer">
 
-      <img class="footer-logo" src="https://via.placeholder.com/150" alt="Логотип магазина Device">
+      <img class="footer-logo" src="images/footer_logo.svg" width="145" height="36" alt="Логотип магазина Device.">
 
       <section class="footer-contacts">
         <h3 class="visually-hidden">Контакты и навигация</h3>
@@ -262,27 +268,26 @@
 
       <section class="footer-social">
         <h3 class="visually-hidden">Социальные сети</h3>
-        <img class="footer-strip" src="https://via.placeholder.com/150" alt="Жёлтая полоса">
 
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button footer-button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebook</span>
+              <img class="footer-social-facebook" src="images/facebook_logo.svg" width="9" height="18" alt="Логотип Facebook.">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button footer-button" href="https://instagram.com/htmlacademy">
-              <span class="visually-hidden">Instagram</span>
+              <img class="footer-social-instagram" src="images/instagram_logo.svg" width="16" height="16" alt="Логотип Instagram.">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button footer-button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
+              <img class="footer-social-twitter" src="images/twitter_logo.svg" width="15" height="14" alt="Логотип Twitter.">
             </a>
           </li>
         </ul>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="https://via.placeholder.com/150" alt="Логотип htmlacademy"></a>
-      </section>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/htmlacademy_logo.svg" width="115" height="33" alt="Логотип HTMLacademy."></a>
+        </section>
     </footer>
 
   </body>
