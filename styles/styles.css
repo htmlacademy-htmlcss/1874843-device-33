@@ -31,9 +31,10 @@ body {
   line-height: 30px;
   color: #444444;
   font-weight: 400;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -68,7 +69,7 @@ body {
 
 .main-navigation-link,
 .footer-navigation-link {
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -81,7 +82,7 @@ body {
 .about-title,
 .contacts-title,
 .subscription-title {
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -89,7 +90,7 @@ body {
 }
 
 .button {
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -189,13 +190,12 @@ body {
 .main-navigation-link-catalog::after {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   background-image: url(../images/plus.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border: 2px solid #000000;
-  box-sizing: border-box;
   border-radius: 50%;
   opacity: 0.3;
   top: -10px;
@@ -210,7 +210,7 @@ body {
 }
 
 .promo-number {
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 180px;
@@ -229,7 +229,6 @@ body {
 }
 
 .promo-pagination-button {
-  box-sizing: border-box;
   width: 12px;
   height: 12px;
   padding: 4px;
@@ -273,7 +272,7 @@ body {
   width: 160px;
   height: 60px;
   text-align: left;
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -365,7 +364,7 @@ body {
 
 .info-delivery {
   position: relative;
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -427,7 +426,7 @@ body {
 }
 
 .about-span {
-  font-family: "Rubik", sans-serif;;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -438,7 +437,7 @@ body {
 }
 
 .contacts-span {
-  font-family: "Rubik", sans-serif;;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -466,18 +465,16 @@ body {
 }
 
 .subscription-field {
-  box-sizing: border-box;
   font-size: 18px;
   line-height: 30px;
-  padding: 11px 150px 14px 16px;
+  padding: 11px 150px 11px 16px;
   border: 0;
   border-bottom: 3px solid #cecece;
   background-color: #f0f0f0;
 }
 
 .subscription-button {
-  box-sizing: border-box;
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -485,7 +482,7 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 18px 39px;
+  padding: 15px 36px;
   border: 3px solid #cecece;
 }
 
@@ -562,7 +559,7 @@ body {
 /* Стили для каталога */
 
 .inner-header-title {
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -600,7 +597,7 @@ body {
 }
 
 .product-card-link {
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -619,7 +616,7 @@ body {
 .pagination-show-more {
   width: 100%;
   height: 55px;
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -646,7 +643,7 @@ body {
 
 .pagination-prev,
 .pagination-next {
-  font-family: Raleway;
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
