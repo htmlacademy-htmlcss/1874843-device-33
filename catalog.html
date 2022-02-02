@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс_каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="header">
+  <header class="page-header">
 
     <h1 class="visually-hidden">Каталог товаров интернет-магазина Device</h1>
     <a class="header-logo" href="index.html">
@@ -14,24 +15,24 @@
 
     <form class="search" action="https://echo.htmlacademy.ru/" method="get">
       <input class="search-field" type="text" name="search-field" placeholder="Текст поиска">
-      <button class="button search-button" type="submit">Найти</button>
+      <button class="search-button" type="submit">Найти</button>
     </form>
 
     <nav class="user-navigation">
       <ul class="user-navigation-list">
-        <li class="user-navigation-item">
-          <a class="user-navigation-link user-navigation-link-enter visually-hidden" href="#">Войти</a>
+        <li class="user-navigation-item user-navigation-item-enter visually-hidden">
+          <a class="user-navigation-link user-navigation-link-enter" href="#">Войти</a>
         </li>
-        <li class="user-navigation-item">
+        <li class="user-navigation-item user-navigation-item-name">
           <a class="user-navigation-link user-navigation-link-name" href="#">Коля Петухов</a>
         </li>
         <li class="user-navigation-item">
           <a class="user-navigation-link user-navigation-link-exit" href="#">Выйти</a>
         </li>
-        <li class="user-navigation-item">
+        <li class="user-navigation-item user-navigation-item-compare">
           <a class="user-navigation-link user-navigation-link-compare" href="#">Сравнить</a>
         </li>
-        <li class="user-navigation-item">
+        <li class="user-navigation-item user-navigation-item-basket">
           <a class="user-navigation-link user-navigation-link-basket" href="#">Корзина</a>
         </li>
       </ul>
@@ -39,8 +40,8 @@
 
     <nav class="main-navigation">
       <ul class="main-navigation-list">
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Каталог товаров</a>
+        <li class="main-navigation-item main-navigation-item-catalog">
+          <a class="main-navigation-link main-navigation-link-catalog" href="#">Каталог товаров</a>
         </li>
         <li class="main-navigation-item">
           <a class="main-navigation-link" href="#">Доставка</a>
@@ -64,10 +65,10 @@
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          <a class="breadcrumbs-link breadcrumbs-link-next" href="#">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Моноподы для селфи</a>
+          <a class="breadcrumbs-link breadcrumbs-link-next">Моноподы для селфи</a>
         </li>
       </ul>
     </header>
@@ -136,10 +137,10 @@
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Популярные</option>
       </select>
-      <a href="#" class="button button-light">
+      <a href="#" class="button-light">
         <span class="visually-hidden">Вверх</span>
       </a>
-      <a class="button" href="#">
+      <a class="button-light" href="#">
         <span class="visually-hidden">Вниз</span>
       </a>
 
@@ -178,13 +179,11 @@
         </li>
       </ul>
 
-      <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+      <button class="pagination-show-more" type="button">Загрузить ещё</button>
 
       <ol class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">
-            <span class="visually-hidden">Назад</span>
-          </a>
+          <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -202,15 +201,13 @@
           <a class="pagination-link" href="#">15</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
-            <span class="visually-hidden">Вперёд</span>
-          </a>
+          <a class="pagination-link pagination-next" href="#">Вперёд</a>
         </li>
       </ol>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="page-footer">
 
     <img class="footer-logo" src="images/footer_logo.svg" width="145" height="36" alt="Логотип магазина Device.">
 
@@ -219,13 +216,13 @@
       <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <ul class="footer-list">
         <li class="footer-item">
-          <a class="footer-link" href="#">Доставка</a>
+          <a class="footer-navigation-link" href="#">Доставка</a>
         </li>
         <li class="footer-item">
-          <a class="footer-link" href="#">Гарантия</a>
+          <a class="footer-navigation-link" href="#">Гарантия</a>
         </li>
         <li class="footer-item">
-          <a class="footer-link" href="#">Контакты</a>
+          <a class="footer-navigation-link" href="#">Контакты</a>
         </li>
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
@@ -236,17 +233,17 @@
 
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button footer-button" href="https://www.facebook.com/htmlacademy">
+          <a class="footer-button" href="https://www.facebook.com/htmlacademy">
             <img class="footer-social-facebook" src="images/facebook_logo.svg" width="9" height="18" alt="Логотип Facebook.">
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button footer-button" href="https://instagram.com/htmlacademy">
+          <a class="footer-button" href="https://instagram.com/htmlacademy">
             <img class="footer-social-instagram" src="images/instagram_logo.svg" width="16" height="16" alt="Логотип Instagram.">
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button footer-button" href="https://twitter.com/htmlacademy_ru">
+          <a class="footer-button" href="https://twitter.com/htmlacademy_ru">
             <img class="footer-social-twitter" src="images/twitter_logo.svg" width="15" height="14" alt="Логотип Twitter.">
           </a>
         </li>
