@@ -26,7 +26,15 @@
 
 /* Общие стили */
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
@@ -107,12 +115,31 @@ body {
 /* Шапка */
 
 .page-header {
+  width: 1160px;
+  min-height: 175px;
+  margin: 0 auto;
   background: linear-gradient(180deg,#ffffff 8%, #FFE17F 8%);
 }
 
+.header-logo {
+  padding-left: 60px;
+}
+
+.user-navigation-container {
+  display: flex;
+  width: 1040px;
+  padding: 0 60px;
+}
+
 .search {
+  width: 517px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.user-navigation-list {
+  margin: 0;
+  padding: 0;
 }
 
 .user-navigation-item-enter {
@@ -180,11 +207,16 @@ body {
 }
 
 .main-navigation-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
+  padding: 0 60px;
+  margin-left: 45px;
 }
 
 .main-navigation-item-catalog {
   position: relative;
+  width: 569px;
 }
 
 .main-navigation-link-catalog::after {
@@ -202,9 +234,18 @@ body {
   left: 250px;
 }
 
+/* Main */
+
+.main-container {
+  flex-grow: 1;
+}
+
 /* Промо-блок */
 
 .gallery {
+  width: 1160px;
+  min-height: 1100px;
+  margin: 0 auto;
   position: relative;
   background: linear-gradient(180deg,#ffe17f 15%, #ffffff 15%);
 }
@@ -226,6 +267,11 @@ body {
   background-color: #ffffff;
   color: #000000;
   border: none;
+}
+
+.promo-pagination {
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-pagination-button {
@@ -252,6 +298,18 @@ body {
 }
 
 /* Сортировка продуктов */
+
+.product-range {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.product-range-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
 
 .product-range-button {
   width: 160px;
@@ -323,13 +381,25 @@ body {
 /* Блок информации */
 
 .info {
-  background: linear-gradient(180deg,#ffffff 20%, #f0f0f0 20%);
+  background: linear-gradient(180deg,#ffffff 30%, #f0f0f0 30%);
+}
+
+.info-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.info-navigation {
+  width: 280px;
 }
 
 .delivery,
 .guarantee,
 .credit {
+  width: 452px;
   position: relative;
+  padding-left: 116px;
 }
 
 .delivery::after {
@@ -339,7 +409,7 @@ body {
   height: 164px;
   background-image: url(../images/delivery.png);
   top: 0;
-  right: 63px;
+  right: -200px;
 }
 
 .guarantee::after {
@@ -364,6 +434,7 @@ body {
 
 .info-delivery {
   position: relative;
+  width: 910px;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -373,6 +444,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background-color: #f0f0f0;
+  margin: 0 auto;
   padding: 0 125px;
 }
 
@@ -403,6 +475,12 @@ body {
 }
 
 /* О нас + контакты */
+
+.about-contacts-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .about,
 .contacts {
@@ -452,8 +530,27 @@ body {
 
 /* Подписка */
 
-.subscription {
+.subscription-container {
   background-color: #f0f0f0;
+}
+
+.subscription {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.subscription-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-title {
+  margin: 64px 0;
+}
+
+.subscription-discription {
+  width: 560px;
+  margin: auto;
 }
 
 .subscription-form {
@@ -508,9 +605,21 @@ body {
   color: #ffffff;
 }
 
+.footer-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .footer-address {
+  width: 239px;
   font-size: 16px;
   line-height: 19px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .footer-navigation-link {
@@ -525,15 +634,32 @@ body {
   line-height: 20px;
 }
 
+.footer-social-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-social {
   position: relative;
+}
+
+.footer-social-list {
+  display: flex;
+  width: 150px;
+  margin: 0;
+  padding-left: 540px;
 }
 
 .footer-social-item {
   width: 40px;
   height: 40px;
+  margin-right: 15px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+}
+
+.footer-social-item:nth-child(3) {
+  margin-right: 0;
 }
 
 .footer-social::before {
@@ -541,6 +667,7 @@ body {
   position: absolute;
   width: 80px;
   height: 7px;
+  top: 13px;
   background-image: url(../images/line-yellow.svg);
 }
 
