@@ -9,9 +9,9 @@
 
     <header class="page-header">
 
-      <h1 class="page-header-title visually-hidden">Магазин современных гаджетов Device</h1>
+      <h1 class="visually-hidden">Магазин современных гаджетов Device</h1>
       <a class="header-logo" href="#">
-        <img class="logo" src="images/header_logo.svg" alt="Логотип магазина Device.">
+        <img class="header-logo-image" src="images/header_logo.svg" width="145" height="36" alt="Логотип магазина Device.">
       </a>
 
       <div class="user-navigation-container">
@@ -40,14 +40,11 @@
             </li>
           </ul>
         </nav>
-
       </div>
 
       <nav class="main-navigation">
+        <a class="main-navigation-link main-navigation-link-catalog" href="catalog.html">Каталог товаров</a>
         <ul class="main-navigation-list">
-          <li class="main-navigation-item main-navigation-item-catalog">
-            <a class="main-navigation-link main-navigation-link-catalog" href="catalog.html">Каталог товаров</a>
-            </li>
           <li class="main-navigation-item">
             <a class="main-navigation-link" href="#">Доставка</a>
           </li>
@@ -77,10 +74,10 @@
             <p class="promo-number">01</p>
 
             <h3 class="promo-title">Порхает как бабочка,<br>жалит как пчела!</h3>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
             <ol class="promo-pagination">
-              <li class="promo-pagination-item">
+              <li class="promo-pagination-item promo-pagination-item-button">
                 <a class="button promo-pagination-link" href="#">Подробнее</a>
               </li>
               <li class="promo-pagination-item">
@@ -100,8 +97,7 @@
               </li>
             </ol>
 
-
-            <table>
+            <table class="promo-table">
               <tr>
                 <td class="promo-table-big">800 м</td>
                 <td class="promo-table-big">50 м</td>
@@ -125,7 +121,7 @@
             <p class="promo-number">02</p>
             <h3 class="gallery-title">Худеем<br>правильно!</h3>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <table>
+            <table class="promo-table">
               <tr>
                 <td class="promo-table-big">48 часов</td>
               </tr>
@@ -175,7 +171,7 @@
           </li>
           <li class="product-range-item">
             <button class="product-range-button">
-              <span class="product-range-span product-range-span-monopod">Моноподы для селфи</span>
+              <span class="product-range-span product-range-span-monopod">Моноподы<br>для селфи</span>
             </button>
           </li>
           <li class="product-range-item">
@@ -224,31 +220,37 @@
           <div class="info-container-right">
             <div class="delivery">
               <h3 class="info-title">Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="info-description">Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно! Ведь<br>
+                мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
 
             <div class="guarantee visually-hidden">
               <h3 class="info-title">Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <p class="info-description">Если из-за возгорания купленного у нас товара у вас<br>
+                сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.</p>
             </div>
 
             <div class="credit visually-hidden">
               <h3 class="info-title">Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <p class="info-description">Залезть в долговую яму стало проще! Кредитные<br>
+                консультанты подберут для вас наиболее выгодные<br>
+                условия кредита. Выгодные для банка, разумеется.</p>
             </div>
           </div>
-
         </div>
-
       </section>
 
-      <p class="info-delivery">Доставим редкий товар под заказ</p>
+      <a class="info-delivery" href="#">Доставим редкий товар под заказ</a>
 
       <div class="about-contacts-container">
         <section class="about">
           <h3 class="about-title">О нас</h3>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <p class="about-description">Огромный выбор гаджетов не оставит равнодушным<br>
+            гика, который есть в каждом из нас.</p>
+          <p class="about-description">Мы можем доставить ваш товар в самые отдалённые<br>
+            уголки России транспортными компаниями:</p>
           <ul class="about-list">
             <li class="about-item">
               <span class="about-span">Меловые линии</span>
@@ -265,29 +267,32 @@
 
         <section class="contacts">
           <h3 class="contacts-title">Контакты</h3>
-          <p>Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки.  </p>
+          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.<br>
+            Заодно сможете проверить работоспособность покупки.  </p>
           <span class="contacts-span">Интернет-магазин «Девайс»</span>
-          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
+          <p class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </p>
           <span class="contacts-span">Время работы</span>
-          <p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+          <p class="contacts-work-clock">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
           <a class="button contacts-link" href="#">Напишите нам</a>
         </section>
       </div>
 
       <div class="subscription-container">
-      <section class="subscription">
-        <div class="subscription-title-container">
-          <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-          <p class="subscription-discription">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        </div>
-        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscription-field" type="email" name="subscription-field" placeholder="Ваш e-mail">
-          <button class="subscription-button" type="submit">Подписаться</button>
-          <span class="subscription-mark">Это бесплатно</span>
-        </form>
-      </section>
+        <section class="subscription">
+          <div class="subscription-title-container">
+            <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+            <p class="subscription-discription">Еженедельный дайджест с обзорами новинок,<br>
+              длительными тест-драйвами, распаковками, а также акции,<br>
+              спецпредложения и вот это вот всё.</p>
+          </div>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="subscription-field" type="email" name="subscription-field" placeholder="Ваш e-mail">
+            <button class="subscription-button" type="submit">Подписаться</button>
+            <span class="subscription-mark">Это бесплатно</span>
+          </form>
+        </section>
       </div>
 
     </main>
@@ -295,28 +300,28 @@
     <footer class="page-footer">
 
       <div class="footer-container">
-        <img class="footer-logo" src="images/footer_logo.svg" width="145" height="36" alt="Логотип магазина Device.">
-
+        <a class="page-footer-logo" href="#" >
+          <img class="footer-logo" src="images/footer_logo.svg" width="145" height="36" alt="Логотип магазина Device.">
+        </a>
         <section class="footer-contacts">
           <h3 class="visually-hidden">Контакты и навигация</h3>
+          <div class="footer-navigation-container">
+            <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 
-          <ul class="footer-list">
-            <li class="footer-item">
-              <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </li>
-            <li class="footer-item">
-              <a class="footer-navigation-link" href="#">Доставка</a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-navigation-link" href="#">Контакты</a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-            </li>
-          </ul>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a class="footer-navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+            <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </div>
         </section>
 
         <section class="footer-social">
