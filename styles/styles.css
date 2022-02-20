@@ -128,7 +128,9 @@ body {
 }
 
 .header-logo-image {
-  margin-bottom: 21px;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 30px;
 }
 
 .user-navigation-container {
@@ -955,14 +957,20 @@ body {
 }
 
 .footer-social-facebook {
-  padding: 11px 15px;
+  display: block;
+  object-fit: contain;
+  padding: 11px 16px;
 }
 
 .footer-social-instagram {
+  display: block;
+  object-fit: contain;
   padding: 12px;
 }
 
 .footer-social-twitter {
+  display: block;
+  object-fit: contain;
   padding: 13px;
 }
 
