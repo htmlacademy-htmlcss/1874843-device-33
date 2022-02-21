@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  min-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -538,6 +538,7 @@ body {
 /* Блок информации */
 
 .info {
+  min-width: 1160px;
   background: linear-gradient(180deg,#ffffff 102px, #f0f0f0 102px);
   padding-bottom: 72px;
   margin-bottom: 70px;
@@ -781,6 +782,7 @@ body {
 /* Подписка */
 
 .subscription-container {
+  min-width: 1160px;
   background-color: #f0f0f0;
   padding-bottom: 57px;
 }
@@ -860,6 +862,7 @@ body {
 /* Подвал */
 
 .page-footer {
+  min-width: 1160px;
   background-color: #444444;
   color: #ffffff;
 }
