@@ -1546,6 +1546,7 @@ body {
 .breadcrumbs-link {
   text-decoration: none;
   color: #000000;
+  outline: none;
 }
 
 .breadcrumbs-link:hover {
@@ -1683,20 +1684,53 @@ body {
   align-items: center;
 }
 
-.sort-item {
+.button-sort {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  position: relative;
+  margin: auto 0;
+  padding: 0;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
   background-position: center center;
+  border: none;
+  outline: none;
   opacity: 0.3;
+  cursor: pointer;
 }
 
-.sort-item-up {
+.button-sort-up {
   background-image: url(../images/sort_up.svg);
 }
 
-.sort-item-down {
+.button-sort-down {
   background-image: url(../images/sort_down.svg);
+}
+
+.button-sort:hover {
+  opacity: 0.6;
+}
+
+.button-sort:active {
+  opacity: 1;
+}
+
+.button-sort::after {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border: 2px solid #af4fff;
+  top: -4px;
+  left: -4px;
+}
+
+.button-sort:focus:after {
+  display: block;
 }
 
 /* product-container */
@@ -1729,6 +1763,19 @@ body {
   letter-spacing: -0.02em;
   text-decoration: none;
   color: #000000;
+  outline: none;
+}
+
+.product-card-link::after {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border: 2px solid #af4fff;
+  top: -3px;
+  left: -3px;
 }
 
 .product-card-more {
@@ -1766,6 +1813,10 @@ body {
 
 .product-card-link:active .product-card-more {
   background-image: linear-gradient(transparent 6px, #ffc700 6px 14px, transparent 14px);
+}
+
+.product-card-link:focus::after {
+  display: block;
 }
 
 .product-card-description {
@@ -1812,8 +1863,8 @@ body {
 
 .pagination-show-more-button {
   display: block;
-  width: 760px;
-  height: 55px;
+  width: 754px;
+  height: 49px;
   padding: 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
@@ -1827,6 +1878,7 @@ body {
   border: 3px solid #e5e5e5;
   background-color: #ffffff;
   color: #000000;
+  outline: none;
   cursor: pointer;
 }
 
@@ -1861,13 +1913,12 @@ body {
 .pagination {
   grid-column: 1/ -1;
   display: flex;
-  width: 710px;
+  width: 760px;
   height: 71px;
-  padding: 0 25px;
+  padding: 0;
   align-items: center;
   justify-content: space-between;
   background-color: #ebebeb;
-
 }
 
 .pagination-list {
@@ -1879,23 +1930,14 @@ body {
   list-style: none;
 }
 
-.pagination-link {
-  display: block;
-  width: 40px;
-  height: 40px;
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  color: #444444;
-  opacity: 0.3;
-}
-
 .pagination-prev,
 .pagination-next {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 71px;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1905,5 +1947,75 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination-prev:hover,
+.pagination-next:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-prev:active,
+.pagination-next:active {
+  opacity: 0.3;
+}
+
+.pagination-prev::after,
+.pagination-next::after {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border: 2px solid #af4fff;
+  top: -4px;
+  left: -4px;
+}
+
+.pagination-prev:focus::after,
+.pagination-next:focus::after {
+  display: block;
+}
+
+.pagination-link {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #c7c7c7;
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination-link:hover {
   opacity: 1;
+}
+
+.pagination-link:active {
+  opacity: 0.1;
+}
+
+.pagination-link::after {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border: 2px solid #af4fff;
+  top: -4px;
+  left: -4px;
+}
+
+.pagination-link:focus::after {
+  display: block;
 }
