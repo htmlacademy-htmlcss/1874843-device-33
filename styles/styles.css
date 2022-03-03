@@ -2952,21 +2952,45 @@ body {
   display: block;
 }
 
-.form-field-number {
-  width: 50px;
-  padding: 0;
-  padding-left: 10px;
+.field-quantity {
+  position: relative;
 
-  text-align: center;
+  display: flex;
+  width: 180px;
 }
 
-.form-field-number::placeholder {
+.form-field-quantity {
+  position: relative;
+
+  width: 180px;
+  padding: 0;
+
+  text-align: center;
+
+  -moz-appearance: textfield;
+}
+
+.form-field-quantity::-webkit-outer-spin-button,
+.form-field-quantity::-webkit-inner-spin-button {
+  margin: 0;
+
+  -webkit-appearance: none;
+}
+
+.form-field-quantity:hover,
+.form-field-quantity:focus {
+  -moz-appearance: number-input;
+}
+
+.form-field-quantity::placeholder {
   color: #000000;
 }
 
 .button-minus,
 .button-plus {
-  position: relative;
+  position: absolute;
+  top: 29px;
+  z-index: 1;
 
   width: 60px;
   padding: 0;
@@ -2989,7 +3013,7 @@ body {
 .button-plus::before {
   content: "";
   position: absolute;
-  right: 21px;
+  right: -98px;
 
   width: 16px;
   height: 2px;
@@ -3000,7 +3024,8 @@ body {
 .button-plus::after {
   content: "";
   position: absolute;
-  top: 23px;
+  top: -7px;
+  right: -91px;
 
   width: 2px;
   height: 16px;
