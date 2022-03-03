@@ -1019,6 +1019,7 @@ body {
   margin: 0;
   padding: 0;
 
+  text-decoration: none;
   color: #000000;
 
   background-color: #ffffff;
@@ -2324,6 +2325,7 @@ body {
 
   vertical-align: middle;
 
+  background-image: url(../images/sort_up.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
@@ -2331,12 +2333,8 @@ body {
   opacity: 0.3;
 }
 
-.button-sort-up {
-  background-image: url(../images/sort_up.svg);
-}
-
 .button-sort-down {
-  background-image: url(../images/sort_down.svg);
+  transform: rotate(180deg);
 }
 
 .button-sort:hover {
@@ -2720,6 +2718,8 @@ body {
 
 .modal-close-button {
   position: relative;
+  top: 10px;
+  left: 0;
 
   width: 26px;
   height: 26px;
@@ -2732,8 +2732,8 @@ body {
 .modal-close-button::after {
   content: "";
   position: absolute;
-  top: 23px;
-  left: -5px;
+  top: 12px;
+  left: -3px;
 
   width: 33px;
   height: 2px;
@@ -2820,6 +2820,10 @@ body {
 
 .form-field:invalid {
   outline: 2px solid #ff3d3d;
+}
+
+.form-field:invalid + .form-field-description {
+  color: #ff3d3d;
 }
 
 .form-field-name {

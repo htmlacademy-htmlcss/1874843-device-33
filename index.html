@@ -108,13 +108,13 @@
 
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Доставка</a>
+          <a class="main-navigation-link" href="#delivery-info">Доставка</a>
         </li>
         <li class="main-navigation-item">
           <a class="main-navigation-link" href="#">Гарантия</a>
         </li>
         <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Контакты</a>
+          <a class="main-navigation-link" href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -276,34 +276,34 @@
 
       <ul class="product-range-list">
         <li class="product-range-item">
-          <button class="product-range-button" type="button">
+          <a class="product-range-button" href="#">
             <span class="product-range-span product-range-span-virtual">Виртуальная реальность</span>
-          </button>
+          </a>
         </li>
         <li class="product-range-item">
-          <button class="product-range-button" type="button">
+          <a class="product-range-button" href="catalog.html">
             <span class="product-range-span product-range-span-monopod">Моноподы<br>для селфи</span>
-          </button>
+          </a>
         </li>
         <li class="product-range-item">
-          <button class="product-range-button" type="button">
+          <a class="product-range-button" href="#">
             <span class="product-range-span product-range-span-action">Экшн-камеры</span>
-          </button>
+          </a>
         </li>
         <li class="product-range-item">
-          <button class="product-range-button" type="button">
+          <a class="product-range-button" href="#">
             <span class="product-range-span product-range-span-fitness">Фитнес-браслеты</span>
-          </button>
+          </a>
         </li>
         <li class="product-range-item">
-          <button class="product-range-button" type="button">
+          <a class="product-range-button" href="#">
             <span class="product-range-span product-range-span-smart">Умные часы</span>
-          </button>
+          </a>
         </li>
         <li class="product-range-item">
-          <button class="product-range-button" type="button">
+          <a class="product-range-button" href="#">
             <span class="product-range-span product-range-span-dron">Квадрокоптеры</span>
-          </button>
+          </a>
         </li>
       </ul>
     </section>
@@ -329,7 +329,7 @@
         </nav>
 
         <div class="info-container-right">
-          <div class="delivery">
+          <div class="delivery" id="delivery-info">
             <h3 class="info-title">Доставка</h3>
             <p class="info-description">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно! Ведь<br>
@@ -378,7 +378,7 @@
         <a class="button about-link" href="#">Подробнее о нас</a>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h3 class="contacts-title">Контакты</h3>
         <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.<br>
           Заодно сможете проверить работоспособность покупки.  </p>
@@ -482,12 +482,12 @@
             <p class="field-group field-group-name">
               <label class="field-group-label" for="name">Ваше имя:</label>
               <input class="form-field form-field-name" type="text" id="name" name="name" placeholder="Введите имя">
-              <span class="form-field-description">Добавьте имя</span>
+              <label class="form-field-description" for="name">Добавьте имя</label>
             </p>
             <p class="field-group field-group-mail">
               <label class="field-group-label" for="e-mail">Ваш e-mail:</label>
               <input class="form-field form-field-mail" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
-              <span class="form-field-description">Забавный у вас адрес</span>
+              <label class="form-field-description" for="e-mail">Забавный у вас адрес</label>
             </p>
             <p class="field-group field-group-delivery">
               <label class="field-group-label" for="delivery">Что нужно привезти:</label>
