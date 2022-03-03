@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс_каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
 
@@ -75,33 +76,36 @@
       <div class="main-navigation-container">
         <button class="button main-navigation-link main-navigation-link-catalog" type="button">Каталог товаров</button>
         <ul class="drop-down-list">
-
-          <ul class="drop-down-list-first">
-            <li class="drop-down-item">
-              <a class="drop-down-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="drop-down-item">
-              <a class="drop-down-link" href="#">Моноподы для селфи</a>
-            </li>
-            <li class="drop-down-item">
-              <a class="drop-down-link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-
-          <ul class="drop-down-list-second">
-            <li class="drop-down-item">
-              <a class="drop-down-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="drop-down-item">
-              <a class="drop-down-link" href="#">Умные часы</a>
-            </li>
-          </ul>
-
-          <ul class="drop-down-list-third">
-            <li class="drop-down-item">
-              <a class="drop-down-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+          <li class="drop-down-list-item">
+            <ul class="drop-down-list-first">
+              <li class="drop-down-item">
+                <a class="drop-down-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="drop-down-item">
+                <a class="drop-down-link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="drop-down-item">
+                <a class="drop-down-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-down-list-item">
+            <ul class="drop-down-list-second">
+              <li class="drop-down-item">
+                <a class="drop-down-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="drop-down-item">
+                <a class="drop-down-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-down-list-item">
+            <ul class="drop-down-list-third">
+              <li class="drop-down-item">
+                <a class="drop-down-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
 
@@ -149,19 +153,25 @@
 
                   <div class="catalog-filter-range">
                     <div class="catalog-filter-range-bar" style="left: 0px; width: 117px">
+                      <div>
                         <button class="catalog-filter-range-toggle catalog-filter-toggle-min">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
-                          <label class="catalog-filter-label catalog-filter-label-left">
-                            от&nbsp; <input class="catalog-filter-range-input" type="number" value="0" name="min-price">
-                          </label>
                         </button>
+                        <label class="catalog-filter-label catalog-filter-label-left">
+                            от&nbsp;
+                          <input class="catalog-filter-range-input" type="number" value="0" name="min-price">
+                        </label>
+                      </div>
 
+                      <div>
                         <button class="catalog-filter-range-toggle catalog-filter-toggle-max">
                           <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
                         <label class="catalog-filter-label catalog-filter-label-right">
-                          до&nbsp; <input class="catalog-filter-range-input" type="number" value="5000" name="max-price">
+                            до&nbsp;
+                          <input class="catalog-filter-range-input" type="number" value="5000" name="max-price">
                         </label>
-                      </button>
+                      </div>
                     </div>
                   </div>
 
@@ -217,14 +227,14 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="catalog-filter-control">
-                      <input class="visually-hidden catalog-filter-control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                      <input class="visually-hidden catalog-filter-control-input" type="radio" name="product-group" value="bluetooth-with" checked>
                       <span class="catalog-filter-control-mark"></span>
                       <span class="catalog-filter-control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="catalog-filter-control">
-                      <input class="visually-hidden catalog-filter-control-input" type="radio" name="product-group" value="care-products">
+                      <input class="visually-hidden catalog-filter-control-input" type="radio" name="product-group" value="bluetooth-without">
                       <span class="catalog-filter-control-mark"></span>
                       <span class="catalog-filter-control-label">Нет</span>
                     </label>
@@ -247,12 +257,12 @@
             </select>
             <ul class="sort-list">
               <li class="sort-item sort-item-up">
-                <button class="button-sort button-sort-up" href="#">
+                <button class="button-sort button-sort-up" type="button">
                   <span class="visually-hidden">Сортировка по увеличению</span>
                 </button>
               </li>
               <li class="sort-item sort-item-down">
-                <button class="button-sort button-sort-down" href="#">
+                <button class="button-sort button-sort-down" type="button">
                   <span class="visually-hidden">Сортировка по уменьшению</span>
                 </button>
               </li>
@@ -269,7 +279,7 @@
                     <span class="product-card-price">500 ₽</span>
                     <span class="product-card-new visually-hidden">New</span>
                   </div>
-                  <span class="product-card-more" href="#">Подробнее</span>
+                  <span class="product-card-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -278,9 +288,9 @@
                   <div class="product-card-description">
                     <h4 class="product-card-title">Профессиональная<br>селфи-палка</h4>
                     <span class="product-card-price">1 500 ₽</span>
-                    <span class="product-card-new">New</span>
+                    <span class="product-card-new visually-hidden">New</span>
                   </div>
-                  <span class="product-card-more" href="#">Подробнее</span>
+                  <span class="product-card-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -291,7 +301,7 @@
                     <span class="product-card-price">2 500 ₽</span>
                     <span class="product-card-new visually-hidden">New</span>
                   </div>
-                  <span class="product-card-more" href="#">Подробнее</span>
+                  <span class="product-card-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -302,7 +312,7 @@
                     <span class="product-card-price">1 500 ₽</span>
                     <span class="product-card-new visually-hidden">New</span>
                   </div>
-                  <span class="product-card-more" href="#">Подробнее</span>
+                  <span class="product-card-more">Подробнее</span>
                 </a>
               </li>
               <li class="pagination-show-more">
