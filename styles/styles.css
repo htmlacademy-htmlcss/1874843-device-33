@@ -266,7 +266,7 @@ body {
 .search {
   display: flex;
   width: 517px;
-  height: 40px;
+  min-height: 40px;
   margin-right: 27px;
 
   font-size: 16px;
@@ -1039,12 +1039,10 @@ body {
 
 .product-range-item {
   width: 160px;
-  height: 253px;
 }
 
 .product-range-button {
   width: 160px;
-  height: 253px;
   margin: 0;
   padding: 0;
 
@@ -1062,7 +1060,7 @@ body {
 
   display: block;
   width: 160px;
-  height: 60px;
+  margin-bottom: 12px;
   padding-top: 193px;
 
   font-family: "Raleway", "Arial", sans-serif;
@@ -1307,7 +1305,7 @@ body {
 
   display: block;
   width: 910px;
-  height: 100px;
+  min-height: 100px;
   margin: 0 auto;
   margin-bottom: 70px;
   padding: 0 125px;
@@ -1516,7 +1514,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 141px;
+  margin-bottom: 143px;
   padding-top: 65px;
 }
 
@@ -1529,6 +1527,7 @@ body {
 .subscription-discription {
   width: 553px;
   margin: 0;
+  padding-bottom: 2px;
 }
 
 .subscription-form {
@@ -1568,6 +1567,7 @@ body {
 }
 
 .subscription-button {
+  width: 253px;
   padding: 14px 36px;
 
   font-family: "Raleway", "Arial", sans-serif;
@@ -1587,6 +1587,7 @@ body {
   position: relative;
 
   margin-left: auto;
+  padding-left: 20px;
 }
 
 .subscription-mark::before {
@@ -1630,13 +1631,14 @@ body {
 
 .footer-navigation-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 47px;
 }
 
 .footer-address {
   width: 239px;
   margin: 0;
+  margin-right: 112px;
 
   font-size: 16px;
   line-height: 20px;
@@ -1645,13 +1647,12 @@ body {
 .footer-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
 .footer-item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 32px;
 }
 
 .footer-navigation-link {
@@ -1674,11 +1675,8 @@ body {
 }
 
 .footer-phone {
-  position: relative;
-
-  align-self: center;
-  margin-top: -10px;
-  margin-left: 85px;
+  margin-top: 8px;
+  margin-left: auto;
 
   font-size: 16px;
   line-height: 20px;
@@ -1885,6 +1883,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-left: 60px;
@@ -2298,6 +2297,7 @@ body {
 }
 
 .catalog-products-title {
+  margin: 0;
   margin-right: 190px;
 
   font-family: "Raleway", "Arial", sans-serif;
@@ -2513,6 +2513,7 @@ body {
 .product-card-title {
   width: 225px;
   margin: 0;
+  padding-right: 20px;
 }
 
 .product-card-price {
@@ -2608,10 +2609,11 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 760px;
-  height: 71px;
+  min-height: 71px;
   padding: 0;
 
   background-color: #ebebeb;
@@ -2635,7 +2637,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 71px;
 
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
@@ -2719,7 +2720,7 @@ body {
   color: rgba(68, 68, 68, 0.1);
 }
 
-.pagination-link:focus {
+.pagination-item:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
