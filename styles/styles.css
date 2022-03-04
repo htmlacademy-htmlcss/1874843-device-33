@@ -875,9 +875,8 @@ body {
   object-fit: contain;
 }
 
-.promo-description {
-  margin: 0;
-  margin-bottom: 51px;
+.promo-card-description {
+  width: 560px;
 }
 
 .promo-number {
@@ -900,6 +899,11 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+}
+
+.promo-description {
+  margin: 0;
+  margin-bottom: 51px;
 }
 
 .promo-pagination {
@@ -1027,6 +1031,7 @@ body {
 
 .product-range-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -1114,7 +1119,7 @@ body {
   background-image: url(../images/dron.svg);
 }
 
-.product-range-span:hover:before {
+.product-range-span:hover::before {
   background-color: #ffc700;
 }
 
@@ -2920,6 +2925,7 @@ body {
 
 .label-tooltip-container {
   position: relative;
+  z-index: 2;
 
   display: flex;
 }
@@ -3020,48 +3026,51 @@ body {
 .button-minus,
 .button-plus {
   position: absolute;
-  top: 29px;
-  z-index: 1;
 
   width: 60px;
+  height: 60px;
   padding: 0;
 
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
-.button-minus::before {
-  content: "";
-  position: absolute;
-  left: 22px;
+.button-minus {
+  z-index: 1;
 
-  width: 16px;
-  height: 2px;
-
-  background-color: #000000;
+  background-image: url(../images/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.button-plus::before {
-  content: "";
-  position: absolute;
-  right: -98px;
+.button-plus {
+  right: 0;
 
-  width: 16px;
-  height: 2px;
-
-  background-color: #000000;
+  background-image: url(../images/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.button-plus::after {
-  content: "";
-  position: absolute;
-  top: -7px;
-  right: -91px;
+.button-minus:hover,
+.button-plus:hover {
+  opacity: 0.6;
+}
 
-  width: 2px;
-  height: 16px;
+.button-minus:active,
+.button-plus:active {
+  opacity: 0.3;
+}
 
-  background-color: #000000;
+.button-minus:focus,
+.button-plus:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-minus:disabled,
+.button-plus:disabled {
+  opacity: 0.1;
 }
 
 .modal-button {
