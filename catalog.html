@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс_каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicon.png">
 </head>
 <body>
 
@@ -18,7 +18,10 @@
     <div class="user-navigation-container">
 
       <form class="search" action="https://echo.htmlacademy.ru/" method="get">
-        <input class="search-field" type="text" name="search-field" placeholder="Текст поиска">
+        <label class="search-field-label">
+          <span class="visually-hidden">Поиск по сайту.</span>
+          <input class="search-field" type="text" name="search-field" placeholder="Текст поиска">
+        </label>
         <button class="search-button" type="submit">Найти</button>
       </form>
 
@@ -143,7 +146,7 @@
     <section class="catalog-products">
       <div class="catalog-container">
 
-        <div class="catalog-container-filter">
+        <div class="catalog-wrapper">
 
           <h3 class="catalog-products-title title-filter">Фильтр:</h3>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -153,8 +156,8 @@
 
                   <div class="catalog-filter-range">
                     <div class="catalog-filter-range-bar" style="left: 0px; width: 117px">
-                      <div>
-                        <button class="catalog-filter-range-toggle catalog-filter-toggle-min">
+                      <div class="range-toggle-min">
+                        <button class="catalog-filter-range-toggle catalog-filter-toggle-min" type="button">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
                         <label class="catalog-filter-label catalog-filter-label-left">
@@ -163,8 +166,8 @@
                         </label>
                       </div>
 
-                      <div>
-                        <button class="catalog-filter-range-toggle catalog-filter-toggle-max">
+                      <div class="range-toggle-max">
+                        <button class="catalog-filter-range-toggle catalog-filter-toggle-max" type="button">
                           <span class="visually-hidden">Изменить максимальную цену.</span>
                         </button>
                         <label class="catalog-filter-label catalog-filter-label-right">
@@ -187,7 +190,7 @@
                       <input class="visually-hidden catalog-filter-control-input" type="checkbox" name="black" checked>
                       <span class="catalog-filter-control-mark"></span>
                       <span class="catalog-filter-control-label">Чёрный</span>
-                      </label>
+                    </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="catalog-filter-control">
@@ -322,19 +325,19 @@
                 <a class="pagination-prev pagination-disabled"  href="#">Назад</a>
                 <ol class="pagination-list">
                   <li class="pagination-item" tabindex="0">
-                    <a class="pagination-link pagination-current" href="#">1</a>
+                    <a class="pagination-link pagination-current">1</a>
                   </li>
                   <li class="pagination-item" tabindex="0">
-                    <a class="pagination-link" href="#">2</a>
+                    <a class="pagination-link">2</a>
                   </li>
                   <li class="pagination-item" tabindex="0">
-                    <a class="pagination-link" href="#">3</a>
+                    <a class="pagination-link">3</a>
                   </li>
                   <li class="pagination-item" tabindex="0">
                     <a class="pagination-link" >...</a>
                   </li>
                   <li class="pagination-item" tabindex="0">
-                    <a class="pagination-link" href="#">15</a>
+                    <a class="pagination-link">15</a>
                   </li>
                 </ol>
                 <a class="pagination-next" href="#">Вперёд</a>

@@ -62,7 +62,8 @@ body {
   border: 0;
 
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .user-navigation-item,
@@ -314,13 +315,6 @@ body {
   border-bottom-left-radius: 20px;
 }
 
-/* .search-field:focus {
-  z-index: 1;
-
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-} */
-
 .search-field:disabled {
   opacity: 0.3;
 }
@@ -395,6 +389,7 @@ body {
 .user-navigation-link-enter {
   padding-left: 25px;
 
+  background-color: #ffe17f;
   background-image: url(../images/silhouette.svg);
   background-repeat: no-repeat;
   background-position: left center;
@@ -407,6 +402,7 @@ body {
 .user-navigation-link-name {
   padding-left: 25px;
 
+  background-color: #ffe17f;
   background-image: url(../images/silhouette.svg);
   background-repeat: no-repeat;
   background-position: left center;
@@ -435,6 +431,7 @@ body {
   margin-left: 20px;
   padding-left: 42px;
 
+  background-color: #ffe17f;
   background-image: url(../images/basket.svg);
   background-repeat: no-repeat;
   background-position: left center;
@@ -660,6 +657,7 @@ body {
   width: 46px;
   height: 46px;
 
+  background-color: #ffe17f;
   background-image: url(../images/plus.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -770,6 +768,7 @@ body {
 
 .main-navigation-container:active .main-navigation-link-catalog::before,
 .main-navigation-container:focus-within .main-navigation-link-catalog::before {
+  background-color: #ffe17f;
   background-image: url(../images/minus.svg);
   background-position: 15px 21px;
   opacity: 1;
@@ -1538,10 +1537,10 @@ body {
 .subscription-field {
   display: block;
   width: 540px;
-  padding: 11px 0 10px 17px;
+  padding: 13px 0 10px 17px;
 
   font-size: 18px;
-  line-height: 30px;
+  line-height: 29px;
   letter-spacing: 0.02em;
 
   background-color: #f0f0f0;
@@ -1555,6 +1554,11 @@ body {
 }
 
 .subscription-field:invalid {
+  border-color: #c4c4c4;
+  opacity: 0.5;
+}
+
+.subscription-field:disabled {
   border-color: #ff3d3d;
 }
 
@@ -1958,7 +1962,7 @@ body {
   margin: 0 auto;
 }
 
-.catalog-container-filter {
+.catalog-wrapper {
   width: 200px;
   padding: 0 60px;
 }
@@ -2073,13 +2077,45 @@ body {
   right: -10px;
 }
 
+.catalog-filter-label,
+.catalog-filter-range-input {
+  max-width: 60px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #cccccc;
+
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+}
+
 .catalog-filter-label {
   position: absolute;
   top: 20px;
 
   display: flex;
+}
 
-  opacity: 0.3;
+.catalog-filter-range-input {
+  -moz-appearance: textfield;
+}
+
+.catalog-filter-range-input::-webkit-outer-spin-button,
+.catalog-filter-range-input::-webkit-inner-spin-button {
+  margin: 0;
+
+  -webkit-appearance: none;
+}
+
+.catalog-filter-range-input:hover,
+.catalog-filter-range-input:focus {
+  -moz-appearance: number-input;
 }
 
 .catalog-filter-label::after {
@@ -2098,24 +2134,6 @@ body {
 
 .catalog-filter-label:focus-within::after {
   display: block;
-}
-
-.catalog-filter-label,
-.catalog-filter-range-input {
-  max-width: 60px;
-  margin: 0;
-  padding: 0;
-
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: normal;
-  color: #000000;
-
-  background-color: #f0f0f0;
-  border: none;
-  outline: none;
 }
 
 .catalog-filter-label-left {
@@ -2206,8 +2224,12 @@ body {
   width: 16px;
   height: 16px;
 
-  border: 2px solid #000000;
+  border: 2px solid #cccccc;
   border-radius: 3px;
+}
+
+.catalog-filter-control-input[type="checkbox"]:checked + .catalog-filter-control-mark {
+  border-color: #000000;
 }
 
 .catalog-filter-control-label {
@@ -2230,6 +2252,10 @@ body {
 
 .catalog-filter-control-input[type="radio"] + .catalog-filter-control-mark {
   border-radius: 50%;
+}
+
+.catalog-filter-control-input[type="radio"]:checked + .catalog-filter-control-mark {
+  border-color: #000000;
 }
 
 .catalog-filter-control-input[type="radio"]:checked + .catalog-filter-control-mark::after {
@@ -2656,6 +2682,11 @@ body {
 .pagination-prev:focus::after,
 .pagination-next:focus::after {
   display: block;
+}
+
+.pagination-prev:disabled,
+.pagination-next:disabled {
+  opacity: 0.1;
 }
 
 .pagination-link {
