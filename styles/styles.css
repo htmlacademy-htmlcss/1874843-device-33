@@ -1025,9 +1025,9 @@ body {
 }
 
 .product-range-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
   margin: 0;
   padding: 0;
 }
