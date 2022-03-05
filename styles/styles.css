@@ -1431,14 +1431,31 @@ body {
   margin: 0;
   margin-bottom: 30px;
   padding-left: 36px;
+
+  list-style-type: none;
 }
 
 .about-item {
-  margin-bottom: 12px;
+  position: relative;
+
+  margin-bottom: 19px;
 
   color: #FFC700;
 
   background-color: #ffffff;
+}
+
+.about-item::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -34px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #ffc700;
+  border-radius: 50%;
 }
 
 .about-span {
@@ -2602,6 +2619,8 @@ body {
   opacity: 0.3;
 }
 
+/* Пагинация */
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
@@ -2632,6 +2651,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 71px;
 
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
@@ -2665,24 +2685,10 @@ body {
   opacity: 0.3;
 }
 
-.pagination-prev::after,
-.pagination-next::after {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-
-  display: none;
-  width: 100%;
-  height: 100%;
-  padding: 2px;
-
-  border: 2px solid #af4fff;
-}
-
-.pagination-prev:focus::after,
-.pagination-next:focus::after {
-  display: block;
+.pagination-prev:focus,
+.pagination-next:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .pagination-prev:disabled,
@@ -2720,8 +2726,8 @@ body {
   outline-offset: 2px;
 }
 
-.pagination-link:disabled {
-  color: rgba(68, 68, 68, 0.3);
+.pagination-link-current {
+  color: rgba(68, 68, 68, 0.6);
 }
 
 /* Модальное окно */
