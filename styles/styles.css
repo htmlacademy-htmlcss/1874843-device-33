@@ -145,7 +145,7 @@ body {
   position: relative;
 
   display: table-cell;
-  height: 40px;
+  min-height: 40px;
   margin: auto 0;
   padding: 0 40px;
 
@@ -2647,7 +2647,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 71px;
+  min-height: 71px;
 
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
