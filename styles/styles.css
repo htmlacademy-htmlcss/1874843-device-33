@@ -1541,7 +1541,7 @@ body {
 .subscription-form {
   display: flex;
   justify-content: start;
-  align-items: baseline;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
