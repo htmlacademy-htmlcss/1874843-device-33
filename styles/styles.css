@@ -257,6 +257,8 @@ body {
 
 .user-navigation-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1040px;
   margin-bottom: 36px;
 }
@@ -267,7 +269,6 @@ body {
   display: flex;
   width: 517px;
   min-height: 40px;
-  margin-right: 27px;
 
   font-size: 16px;
   line-height: 20px;
@@ -370,20 +371,16 @@ body {
 
 /* Пользовательская навигация */
 
-.user-navigation {
-  flex-grow: 1;
-  align-self: center;
-}
-
 .user-navigation-list {
   display: flex;
   justify-content: space-between;
+  width: 496px;
   margin: 0;
   padding: 0;
 }
 
 .user-navigation-item-enter {
-  margin-right: auto;
+  width: 230px;
 }
 
 .user-navigation-link-enter {
@@ -395,8 +392,10 @@ body {
   background-position: left center;
 }
 
-.user-navigation-item-name {
-  width: 148px;
+.user-navigation-item-login {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
 }
 
 .user-navigation-link-name {
@@ -409,13 +408,11 @@ body {
 }
 
 .user-navigation-link-exit {
-  margin-right: 35px;
-  margin-left: 15px;
-
   opacity: 0.3;
 }
 
 .user-navigation-link-compare {
+  width: 105px;
   padding-left: 22px;
 
   background-image: url(../images/compare.svg);
@@ -428,7 +425,6 @@ body {
 }
 
 .user-navigation-link-basket {
-  margin-left: 20px;
   padding-left: 42px;
 
   background-color: #ffe17f;
