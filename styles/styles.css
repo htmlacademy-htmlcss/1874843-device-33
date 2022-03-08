@@ -1557,7 +1557,7 @@ body {
 
   background-color: #f0f0f0;
   border: none;
-  border-bottom: 3px solid #cecece;
+  border-bottom: 3px solid #e5e5e5;
 }
 
 .subscription-field:focus {
@@ -1566,12 +1566,11 @@ body {
 }
 
 .subscription-field:invalid {
-  border-color: #c4c4c4;
-  opacity: 0.5;
+  border-color: #ff3d3d;
 }
 
 .subscription-field:disabled {
-  border-color: #ff3d3d;
+  opacity: 0.3;
 }
 
 .subscription-button {
