@@ -1587,8 +1587,30 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 
-  border: 3px solid #cecece;
+  border: 3px solid #e5e5e5;
   cursor: pointer;
+}
+
+.subscription-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.subscription-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-button:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.subscription-button:disabled {
+  opacity: 0.3;
 }
 
 .subscription-mark {
