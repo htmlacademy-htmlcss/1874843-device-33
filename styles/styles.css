@@ -314,6 +314,7 @@ body {
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  outline: none;
 }
 
 .search-field:disabled {
@@ -2541,6 +2542,10 @@ body {
 
 .product-card-link:focus::after {
   display: block;
+}
+
+.product-card-link:focus  .product-card-more{
+  z-index: 1;
 }
 
 .product-card-description {
