@@ -310,7 +310,7 @@ body {
   background-image: url(../images/glass.svg);
   background-repeat: no-repeat;
   background-position: left 13px center;
-  border-color: #000000;
+  border: 2px solid #000000;
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -330,7 +330,7 @@ body {
   line-height: 20px;
 
   background-color: #ffe17f;
-  border-color: #000000;
+  border: 2px solid #000000;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;
@@ -2307,6 +2307,8 @@ body {
 .catalog-filter-button {
   width: 220px;
   padding: 0 50px;
+
+  background-color: transparent;
 }
 
 /* Сортировка */
@@ -2510,7 +2512,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
 
-  background-image: linear-gradient(transparent 6px, #ffe17f 6px 14px, transparent 14px);
+  background-image: linear-gradient(transparent 16px, #ffe17f 16px 24px, transparent 24px);
   border: none;
   outline: none;
   cursor: pointer;
@@ -2522,11 +2524,19 @@ body {
 }
 
 .product-card-link:hover .product-card-more {
-  display: block;
+  display: flex;
+}
+
+.product-card-link:hover .product-card-more:hover {
+  background-color: #ffe17f;
 }
 
 .product-card-link:active .product-card-more {
-  background-image: linear-gradient(transparent 6px, #ffc700 6px 14px, transparent 14px);
+  background-image: linear-gradient(transparent 16px, #ffc700 16px 24px, transparent 24px);
+}
+
+.product-card-link:active .product-card-more:active {
+  background-color: #ffc700;
 }
 
 .product-card-link:focus::after {
