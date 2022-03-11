@@ -2417,6 +2417,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
+  outline: none;
   cursor: pointer;
   opacity: 0.3;
 }
