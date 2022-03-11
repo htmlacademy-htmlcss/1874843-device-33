@@ -310,10 +310,11 @@ body {
   background-image: url(../images/glass.svg);
   background-repeat: no-repeat;
   background-position: left 13px center;
-  border-color: #000000;
+  border: 2px solid #000000;
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  outline: none;
 }
 
 .search-field:disabled {
@@ -330,7 +331,7 @@ body {
   line-height: 20px;
 
   background-color: #ffe17f;
-  border-color: #000000;
+  border: 2px solid #000000;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;
@@ -1557,7 +1558,7 @@ body {
 
   background-color: #f0f0f0;
   border: none;
-  border-bottom: 3px solid #cecece;
+  border-bottom: 3px solid #e5e5e5;
 }
 
 .subscription-field:focus {
@@ -1566,12 +1567,11 @@ body {
 }
 
 .subscription-field:invalid {
-  border-color: #c4c4c4;
-  opacity: 0.5;
+  border-color: #ff3d3d;
 }
 
 .subscription-field:disabled {
-  border-color: #ff3d3d;
+  opacity: 0.3;
 }
 
 .subscription-button {
@@ -1587,8 +1587,30 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 
-  border: 3px solid #cecece;
+  border: 3px solid #e5e5e5;
   cursor: pointer;
+}
+
+.subscription-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.subscription-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-button:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.subscription-button:disabled {
+  opacity: 0.3;
 }
 
 .subscription-mark {
@@ -2286,6 +2308,8 @@ body {
 .catalog-filter-button {
   width: 220px;
   padding: 0 50px;
+
+  background-color: transparent;
 }
 
 /* Сортировка */
@@ -2393,6 +2417,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
+  outline: none;
   cursor: pointer;
   opacity: 0.3;
 }
@@ -2489,7 +2514,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
 
-  background-image: linear-gradient(transparent 6px, #ffe17f 6px 14px, transparent 14px);
+  background-image: linear-gradient(transparent 16px, #ffe17f 16px 24px, transparent 24px);
   border: none;
   outline: none;
   cursor: pointer;
@@ -2501,15 +2526,27 @@ body {
 }
 
 .product-card-link:hover .product-card-more {
-  display: block;
+  display: flex;
+}
+
+.product-card-link:hover .product-card-more:hover {
+  background-color: #ffe17f;
 }
 
 .product-card-link:active .product-card-more {
-  background-image: linear-gradient(transparent 6px, #ffc700 6px 14px, transparent 14px);
+  background-image: linear-gradient(transparent 16px, #ffc700 16px 24px, transparent 24px);
+}
+
+.product-card-link:active .product-card-more:active {
+  background-color: #ffc700;
 }
 
 .product-card-link:focus::after {
   display: block;
+}
+
+.product-card-link:focus  .product-card-more{
+  z-index: 1;
 }
 
 .product-card-description {
